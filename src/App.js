@@ -6,4 +6,4 @@ const App = () => {
   return <div>Cycle There!</div>;
 };
 
-export default App;
+render(<App />, document.getElementById("root"));
