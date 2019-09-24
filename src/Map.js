@@ -1,23 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { css } from "@emotion/core";
-import { render } from "react-dom";
 
 const Map = ({ options, onMount, className }) => {
   const divProps = { ref: useRef(), className };
-
-  // const addMarkers = links => map => {
-  //   links.forEach((link, index) => {
-  //     const marker = new window.google.maps.Marker({
-  //       map,
-  //       position: link.coords,
-  //       label: `${index + 1}`,
-  //       title: link.title
-  //     });
-  //     marker.addListener("click", () => {
-  //       window.location.href = link.url;
-  //     });
-  //   });
-  // };
 
   useEffect(() => {
     const mapVar = process.env.MAP_KEY;
