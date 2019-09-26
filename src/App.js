@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-import React, { useState } from "react";
-import { render } from "react-dom";
-import { Router } from "@reach/router";
-import MapContainer from "./MapContainer";
-
-const App = () => {
-  return (
-    <>
-      <div>Cycle There!</div>
-      <div>
-        <MapContainer></MapContainer>
-      </div>
-=======
 import React, { useState } from 'react';
 import { render } from 'react-dom';
 import { Router } from '@reach/router';
@@ -25,8 +11,8 @@ import {
   ResponsiveContext
 } from 'grommet';
 import { Menu, FormClose } from 'grommet-icons';
+import MapContainer from './MapContainer';
 import customTheme from './theme';
-import MainContainer from './MainContainer';
 
 const AppBar = props => (
   <Box
@@ -62,7 +48,8 @@ const App = () => {
               </AppBar>
               <Box direction="row" flex overflow={{ horizontal: 'hidden' }}>
                 <Box flex align="center" justify="center">
-                  Body for the Map.
+                  {/* Body for the Map. */}
+                  <MapContainer />
                 </Box>
                 {!showSidebar || size !== 'small' ? (
                   <Collapsible direction="horizontal" open={showSidebar}>
@@ -106,7 +93,6 @@ const App = () => {
           )}
         </ResponsiveContext.Consumer>
       </Grommet>
->>>>>>> 894e4787433f1ce141bcb9ca889927deed22c530
     </>
   );
 };
