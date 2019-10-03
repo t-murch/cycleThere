@@ -73,8 +73,9 @@ const Map = ({ options, onMount, className }) => {
 
 Map.defaultProps = {
   options: {
-    center: { lat: 47.266171, lng: -122.448257 },
-    zoom: 12,
+    center: { lat: 30.265616, lng: -97.749806 },
+    // center: { lat: 47.266171, lng: -122.448257 },
+    zoom: 16,
     disableDefaultUI: true
   }
 };
